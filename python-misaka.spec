@@ -18,7 +18,7 @@ A CFFI binding for Hoedown (version 3), a markdown parsing library.}
 
 %package -n python3-%{srcname}
 Summary:        %{summary}
-BuildRequires:  python3-devel, gcc
+BuildRequires:  python3-devel, gcc, python3-cffi
 
 %description -n python3-%{srcname} %_description
 
