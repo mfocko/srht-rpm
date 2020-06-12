@@ -11,32 +11,36 @@ Source0:        https://git.sr.ht/~sircmpwn/core.sr.ht/archive/%{version}.tar.gz
 
 BuildArch:      noarch
 
-%global _description %{expand: Core Python library for Sourcehut}
-
-%description %_description
+%description
+Core Python library for Sourcehut
 
 %package -n python3-%{srcname}
 Summary:        %{summary}
-BuildRequires:  python3-devel
+BuildRequires:  python3-devel, npm, gcc, libpq-devel
 
-%description -n python3-%{srcname} %_description
+%description -n python3-%{srcname}
+Core Python library for Sourcehut
 
 %prep
-%autosetup # -n %{srcname}-%{version}
+%autosetup -n core.sr.ht-%{version}
 %build
 %py3_build
 
 %install
 %py3_install
 
-%check
-%{python3} setup.py test
+#%check
+#%{python3} setup.py test
 
 # Note that there is no %%files section for the unversioned python module
 %files -n python3-%{srcname}
-%license COPYING
-%doc README.rst
-%{python3_sitelib}/%{srcname}-*.egg-info/
-%{python3_sitelib}/%{srcname}/
-%{_bindir}/sample-exec
-
+#%{python3_sitelib}/%{srcname}-*.egg-info/
+#%{python3_sitelib}/%{srcname}/
+#%{_bindir}/sample-exec
+#%doc /usr/share/doc/python3-srht/README.md
+#%license /usr/share/licenses/python3-srht/LICENSE
+/usr/lib/python3.8/site-packages/srht-0.0.0-py3.8.egg-info
+/usr/lib/python3.8/site-packages/srht
+%{_bindir}/srht-migrate
+%{_bindir}/srht-update-profiles
+%{_bindir}/srht-keygen
