@@ -1,11 +1,3 @@
-Name:           python-srht 
-Release:        1%{?dist}
-Summary:        Core Python library for Sourcehut
-
-License:        
-URL:            
-
-
 %global srcname srht
 
 Name:           python-%{srcname}
