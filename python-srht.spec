@@ -22,8 +22,7 @@ BuildRequires:  python3-devel
 %description -n python3-%{srcname} %_description
 
 %prep
-%autosetup -n %{srcname}-%{version}
-
+%autosetup # -n %{srcname}-%{version}
 %build
 %py3_build
 
