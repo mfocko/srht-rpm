@@ -3,7 +3,7 @@
 
 Name:           python-%{pypi_name}
 Version:        2.48.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Python bindings for the Stripe API
 
 License:        MIT

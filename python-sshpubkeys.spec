@@ -3,7 +3,7 @@
 
 Name:           python-%{pypi_name}
 Version:        3.1.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        SSH public key parser
 
 License:        BSD

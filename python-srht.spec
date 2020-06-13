@@ -2,7 +2,7 @@
 
 Name:           python-%{srcname}
 Version:        0.62.3
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Core Python library for Sourcehut
 
 License:        BSD

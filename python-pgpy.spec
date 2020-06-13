@@ -2,7 +2,7 @@
 
 Name:           python-%{srcname}
 Version:        0.5.2
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Example python module
 
 License:        BSD

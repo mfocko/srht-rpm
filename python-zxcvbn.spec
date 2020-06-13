@@ -3,7 +3,7 @@
 
 Name:           python-%{pypi_name}
 Version:        4.4.28
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        A realistic password strength estimator
 
 License:        MIT

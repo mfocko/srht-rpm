@@ -3,7 +3,7 @@
 
 Name:           python-%{pypi_name}
 Version:        3.1.1
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Thin-wrapper around the mock package for easier use with pytest
 
 License:        MIT
