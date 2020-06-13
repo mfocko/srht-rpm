@@ -17,6 +17,7 @@ Core Python library for Sourcehut
 %package -n python3-%{srcname}
 Summary:        %{summary}
 BuildRequires:  python3-devel, npm, gcc, libpq-devel, git
+Requires:       python3-packaging
 
 %description -n python3-%{srcname}
 Core Python library for Sourcehut
