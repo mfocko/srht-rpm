@@ -4,7 +4,7 @@
 Name:           python-%{pypi_name}
 Version:        4.4.28
 Release:        1%{?dist}
-Summary:
+Summary:        A realistic password strength estimator
 
 License:        MIT
 URL:            https://github.com/dwolfhub/zxcvbn-python
