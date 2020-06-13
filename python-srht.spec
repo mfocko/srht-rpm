@@ -8,7 +8,7 @@ Summary:        Core Python library for Sourcehut
 License:        BSD
 URL:            https://git.sr.ht/~sircmpwn/core.sr.ht/
 Source0:        https://git.sr.ht/~sircmpwn/core.sr.ht/archive/%{version}.tar.gz
-
+Source1:        https://github.com/twbs/bootstrap/archive/v4.5.0.tar.gz
 BuildArch:      noarch
 
 %description
@@ -23,11 +23,16 @@ Core Python library for Sourcehut
 
 %prep
 %autosetup -n core.sr.ht-%{version}
+cp %{SOURCE1} ./
+tar xf ./v4.5.0.tar.gz
+
 %build
 %py3_build
 
 %install
 %py3_install
+
+cp -r ./bootstrap-4.5.0 $RPM_BUILD_ROOT/usr/lib/python3.8/site-packages/%{srcname}/scss/bootstrap
 
 #%check
 #%{python3} setup.py test
