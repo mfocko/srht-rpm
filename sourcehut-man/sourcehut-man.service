@@ -1,0 +1,7 @@
+[Unit]
+Description=sourcehut-man
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /usr/share/srht/man/run.py
+
