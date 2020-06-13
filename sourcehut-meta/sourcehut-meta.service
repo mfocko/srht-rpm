@@ -3,4 +3,5 @@ Description=sourcehut-meta
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/python3 /usr/share/srht/meta/run.py
+ExecStart=/usr/bin/gunicorn /usr/share/srht/meta/run-gunicorn.py -n meta.sr.ht -b [::]:53211
+

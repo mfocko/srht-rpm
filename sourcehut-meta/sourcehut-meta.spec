@@ -9,8 +9,9 @@ Source0:        https://git.sr.ht/~sircmpwn/meta.sr.ht/archive/%{version}.tar.gz
 #Source1:        sourcehut-meta.conf
 Source2:        sourcehut-meta.service
 Source3:        meta-srht.conf
+Source4:        run-gunicorn.py
 BuildRequires:  python3-srht, python3-metasrht, sassc
-Requires:       python3-srht, python3-metasrht, sassc
+Requires:       python3-srht, python3-metasrht, sassc, python3-gunicorn
 
 %description
 
@@ -41,7 +42,7 @@ cp config.example.ini %{buildroot}%{_sysconfdir}/sr.ht
 cp -r static %{buildroot}/usr/share/srht/meta/html/static
 
 install -m 0755 run.py %{buildroot}/usr/share/srht/meta/run.py
-
+install -m 0755 run-gunicorn.py %{buildroot}/usr/share/srht/meta/run-gunicorn.py
 
 # install -m 0755 metasrht-createuser %{buildroot}%{_bindir}/metasrht-createuser
 # install -m 0755 metasrht-daily %{buildroot}%{_bindir}/metasrht-daily
