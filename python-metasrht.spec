@@ -34,13 +34,10 @@ Core Python library for Sourcehut
 
 # Note that there is no %%files section for the unversioned python module
 %files -n python3-%{srcname}
-#%{python3_sitelib}/%{srcname}-*.egg-info/
-#%{python3_sitelib}/%{srcname}/
-#%{_bindir}/sample-exec
-#%doc /usr/share/doc/python3-srht/README.md
-#%license /usr/share/licenses/python3-srht/LICENSE
-#/usr/lib/python3.8/site-packages/srht-0.0.0-py3.8.egg-info
-#/usr/lib/python3.8/site-packages/srht
-#%{_bindir}/srht-migrate
-#%{_bindir}/srht-update-profiles
-#%{_bindir}/srht-keygen
+%{python3_sitelib}/%{srcname}-*.egg-info/
+%{python3_sitelib}/%{srcname}/
+%{_bindir}/metasrht-createuser
+%{_bindir}/metasrht-daily
+%{_bindir}/metasrht-initdb
+%{_bindir}/metasrht-invoicestats
+%{_bindir}/metasrht-migrate
