@@ -3,4 +3,4 @@ Description=sourcehut-meta
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/python3 /usr/share/sourcehut/meta.sr.ht/run.py
+ExecStart=/usr/bin/python3 /usr/share/srht/meta/run.py

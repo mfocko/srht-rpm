@@ -5,6 +5,26 @@ represents an attempt to package it sensibly for RPM distros.
 Currently this is FC32-only, but will eventually be built for
 CentOS too.
 
+## Usage
+
+````sh
+sudo dnf copr enable tylerjgriffiths/srht
+sudo dnf -y install sourcehut-git
+````
+
+Modify /etc/sr.ht/config.ini as appropriate; an example configuration
+file is placed into `/etc/sr.ht/conf.d/$service.ini`. Generate keys
+with srht-keygen and store in the appropriate locations. You should use a new
+Postgres database for _each_ service you are running. Then enable
+the appropriate services, which run with Gunicorn.
+
+````sh
+sudo systemctl enable --now sourcehut-meta sourcehut-git
+````
+
+You are now using Sourcehut.
+
+
 ## Packages
 
  * [![Copr build status](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/python-srht/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/python-srht/) `python-srht` is the core Python library for all Sourcehut services
