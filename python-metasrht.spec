@@ -17,7 +17,7 @@ Metadata service for Sourcehut
 %package -n python3-%{srcname}
 Summary:        %{summary}
 BuildRequires:  python3-devel, python3-srht, sassc, node, npm, git
-
+Requires: python3-celery, python3-packaging
 %description -n python3-%{srcname}
 Core Python library for Sourcehut
 
