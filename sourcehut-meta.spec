@@ -8,8 +8,8 @@ URL:            https://git.sr.ht/~sircmpwn/meta.sr.ht/
 Source0:        https://git.sr.ht/~sircmpwn/meta.sr.ht/archive/%{version}.tar.gz
 #Source1:        sourcehut-meta.conf
 Source2:        sourcehut-meta.service
-BuildRequires:  python3-srht, python3-metasrht
-Requires:       python3-srht, python3-metasrht
+BuildRequires:  python3-srht, python3-metasrht, sassc
+Requires:       python3-srht, python3-metasrht, sassc
 
 %description
 
