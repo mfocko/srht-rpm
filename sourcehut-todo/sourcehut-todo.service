@@ -1,0 +1,8 @@
+[Unit]
+Description=SourceHut ticketing system
+
+[Service]
+Type=simple
+WorkingDirectory=/usr/share/srht/todo
+ExecStart=/usr/bin/gunicorn gunicorn-run:app -n hub.sr.ht -b [::]:53213
+
