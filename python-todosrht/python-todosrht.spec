@@ -15,8 +15,8 @@ Ticketing for Sourcehut
 
 %package -n python3-%{srcname}
 Summary:        %{summary}
-BuildRequires:  python3-srht, sassc, node, npm
-Requires:       python3-srht
+BuildRequires:  python3-srht, sassc, node, npm, sourcehut-core, python3-packaging
+Requires:       sourcehut-core, python3-packaging
 
 %description -n python3-%{srcname}
 Ticketing for Sourcehut
