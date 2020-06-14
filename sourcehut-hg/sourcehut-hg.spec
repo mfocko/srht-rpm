@@ -11,7 +11,7 @@ Source2:        hg-srht.conf
 Source3:        hg-gunicorn-run.py
 Source4:        hg.ini
 BuildRequires:  python3-scmsrht, python3-devel, python3-hgsrht, sourcehut-core, sourcehut-meta, sassc, node, npm, hg, golang, git
-Requires:       python3-scmsrht, python3-hgsrht, python3-pygit2, python3-minio, sourcehut-core, sourcehut-meta, python3-gunicorn, golang, hg, git
+Requires:       python3-scmsrht, python3-hgsrht, python3-minio, sourcehut-core, sourcehut-meta, python3-gunicorn, golang, hg, git
 
 %global debug_package %{nil}
 
@@ -46,12 +46,12 @@ install -m 0755 hgsrht-clonebundles %{buildroot}/%{_bindir}/hgsrht-clonebundles
 install -m 0755 hgsrht-hook-changegroup %{buildroot}/%{_bindir}/hgsrht-hook-changegroup
 install -m 0755 hgsrht-initdb %{buildroot}/%{_bindir}/hgsrht-initdb
 install -m 0755 hgsrht-install-ext %{buildroot}/%{_bindir}/hgsrht-install-ext
-install -m 0755 hgsrht-keys/gitsrht-keys %{buildroot}/%{_bindir}/hgsrht-keys
+install -m 0755 hgsrht-keys/hgsrht-keys %{buildroot}/%{_bindir}/hgsrht-keys
 install -m 0755 hgsrht-migrate %{buildroot}/%{_bindir}/hgsrht-migrate
 install -m 0755 hgsrht-periodic %{buildroot}/%{_bindir}/hgsrht-periodic
 install -m 0755 hgsrht-shell %{buildroot}/%{_bindir}/hgsrht-shell
 install -m 0755 hgsrht-upgraderepos %{buildroot}/%{_bindir}/hgsrht-upgraderepos
-install -m 0755 run.py %{buildroot}/usr/share/srht/git/run.py
+install -m 0755 run.py %{buildroot}/usr/share/srht/hg/run.py
 
 cp %{SOURCE1} %{buildroot}/%{_sysconfdir}/systemd/system/sourcehut-hg.service
 cp %{SOURCE2} %{buildroot}/%{_sysconfdir}/httpd/conf.d/hg-srht.conf
@@ -79,7 +79,7 @@ cp %{SOURCE4} %{buildroot}/%{_sysconfdir}/sr.ht/hg.ini
 %{_bindir}/hgsrht-periodic
 %{_bindir}/hgsrht-shell
 %{_bindir}/hgsrht-upgraderepos
-/usr/share/srht/git/run.py
+/usr/share/srht/hg/run.py
 
 
 
