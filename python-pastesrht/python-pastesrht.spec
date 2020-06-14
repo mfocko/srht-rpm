@@ -3,7 +3,7 @@
 Name:           python-%{srcname}
 Version:        0.10.3
 Release:        2%{?dist}
-Summary:        Ticketing for Sourcehut
+Summary:        Pastebin for Sourcehut
 
 License:        AGPL
 URL:            https://git.sr.ht/~sircmpwn/paste.sr.ht/
@@ -11,7 +11,7 @@ Source0:        https://git.sr.ht/~sircmpwn/paste.sr.ht/archive/%{version}.tar.g
 BuildArch:      noarch
 
 %description
-Ticketing for Sourcehut
+Pastebin for Sourcehut
 
 %package -n python3-%{srcname}
 Summary:        %{summary}
@@ -19,7 +19,7 @@ BuildRequires:  python3-devel, python3-srht, python3-packaging, sassc, node, npm
 Requires:       python3-srht, python3-packaging
 
 %description -n python3-%{srcname}
-Ticketing for Sourcehut
+Pastebin for Sourcehut
 
 %prep
 %autosetup -n paste.sr.ht-%{version}
