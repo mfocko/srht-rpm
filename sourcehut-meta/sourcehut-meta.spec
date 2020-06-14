@@ -10,8 +10,8 @@ Source1:        meta.ini
 Source2:        sourcehut-meta.service
 Source3:        meta-srht.conf
 Source4:        meta-gunicorn-run.py
-BuildRequires:  python3-srht, python3-metasrht, sassc, sourcehut-core
-Requires:       python3-metasrht, sassc, python3-gunicorn, sourcehut-core
+BuildRequires:  python3-srht, python3-metasrht, sassc, sourcehut-core, golang
+Requires:       python3-metasrht, sassc, python3-gunicorn, sourcehut-core, golang
 
 %description
 
@@ -24,6 +24,10 @@ Requires:       python3-metasrht, sassc, python3-gunicorn, sourcehut-core
 rm static
 cp -rL _static static
 sassc scss/main.scss -I /usr/lib/python3.8/site-packages/srht/scss/ > static/main.css
+
+cd api
+go build
+cd ..
 
 
 
@@ -48,6 +52,8 @@ install -m 0755 metasrht-invoicestats %{buildroot}%{_bindir}/metasrht-invoicesta
 install -m 0755 metasrht-migrate %{buildroot}%{_bindir}/metasrht-migrate
 install -m 0755 scripts/revoke-expired-tokens %{buildroot}%{_bindir}/metasrht-revoke-expired-tokens
 
+install -m 0755 api/api %{buildroot}/%{_bindir}/metasrht-api
+
 cp %{SOURCE1} %{buildroot}/%{_sysconfdir}/sr.ht/meta.ini
 cp %{SOURCE2} %{buildroot}/%{_sysconfdir}/systemd/system/
 cp %{SOURCE3} %{buildroot}/%{_sysconfdir}/httpd/conf.d/meta-srht.conf
@@ -64,6 +70,7 @@ chmod a+xr -R %{buildroot}/usr/share/srht/
 %{_bindir}/metasrht-invoicestats
 %{_bindir}/metasrht-migrate
 %{_bindir}/metasrht-revoke-expired-tokens
+%{_bindir}/metasrht-api
 
 %config %{_sysconfdir}/sr.ht/meta.ini
 %config %{_sysconfdir}/httpd/conf.d/meta-srht.conf
