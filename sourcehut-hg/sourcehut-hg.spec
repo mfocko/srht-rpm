@@ -10,8 +10,8 @@ Source1:        sourcehut-hg.service
 Source2:        hg-srht.conf
 Source3:        hg-gunicorn-run.py
 Source4:        hg.ini
-BuildRequires:  python3-scmsrht, python3-devel, python3-hgsrht, sourcehut-core, sourcehut-meta, sassc, node, npm, git, golang
-Requires:       python3-scmsrht, python3-hgsrht, python3-pygit2, python3-minio, sourcehut-core, sourcehut-meta, python3-gunicorn, golang
+BuildRequires:  python3-scmsrht, python3-devel, python3-hgsrht, sourcehut-core, sourcehut-meta, sassc, node, npm, hg, golang, git
+Requires:       python3-scmsrht, python3-hgsrht, python3-pygit2, python3-minio, sourcehut-core, sourcehut-meta, python3-gunicorn, golang, hg, git
 
 %global debug_package %{nil}
 
