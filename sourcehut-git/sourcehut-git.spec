@@ -10,8 +10,8 @@ Source1:        sourcehut-git.service
 Source2:        git-srht.conf
 Source3:        git-gunicorn-run.py
 Source4:        git.ini
-BuildRequires:  python3-devel, python3-gitsrht, sourcehut-core, sourcehut-meta, sassc, node, npm, git
-Requires:       python3-gitsrht, sourcehut-core, sourcehut-meta, python3-gunicorn
+BuildRequires:  python3-scmsrht, python3-devel, python3-gitsrht, sourcehut-core, sourcehut-meta, sassc, node, npm, git
+Requires:       python3-scmsrht, python3-gitsrht, sourcehut-core, sourcehut-meta, python3-gunicorn
 
 %global debug_package %{nil}
 
