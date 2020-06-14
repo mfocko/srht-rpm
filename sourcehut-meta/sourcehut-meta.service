@@ -1,5 +1,6 @@
 [Unit]
 Description=SourceHut metadata and accounts service
+Requires: sourcehut-meta-api.service
 
 [Service]
 Type=simple
