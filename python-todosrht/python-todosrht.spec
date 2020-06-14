@@ -29,6 +29,7 @@ Ticketing for Sourcehut
 
 %install
 %py3_install
+find %{buildroot}
 rm %{buildroot}/%{_bindir}/todosrht-*
 
 # %check
