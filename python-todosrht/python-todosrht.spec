@@ -31,8 +31,8 @@ Ticketing for Sourcehut
 %py3_install
 rm %{buildroot}/%{_bindir}/todosrht-*
 
-%check
-%{python3} setup.py test
+#%check
+#%{python3} setup.py test
 
 # Note that there is no %%files section for the unversioned python module
 %files -n python3-%{srcname}
