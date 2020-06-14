@@ -7,7 +7,7 @@ License:        MIT
 URL:            https://aerc-mail.org
 Source0:        https://git.sr.ht/~sircmpwn/aerc/archive/0.4.0.tar.gz
 
-BuildRequires:  golang, scdoc
+BuildRequires:  golang, scdoc, git
 Requires:       golang, scdoc
 
 %global debug_package %{nil}
