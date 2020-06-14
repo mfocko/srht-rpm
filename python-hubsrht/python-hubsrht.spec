@@ -26,8 +26,9 @@ Project hub for Sourcehut
 %autosetup -n hub.sr.ht-%{version}
 
 %build
-%py3_build
 cat /var/tmp/rpm-tmp.*
+%py3_build
+
 
 %install
 %py3_install
