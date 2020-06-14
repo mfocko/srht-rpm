@@ -37,7 +37,6 @@ Scm service for Sourcehut
 
 # Note that there is no %%files section for the unversioned python module
 %files -n python3-%{srcname}
-%doc README.md
 %license LICENSE
 %{python3_sitelib}/%{srcname}-*.egg-info
 %{python3_sitelib}/%{srcname}/
