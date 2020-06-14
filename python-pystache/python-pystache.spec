@@ -3,7 +3,7 @@
 
 Name:           python-%{pypi_name}
 Version:        0.5.4
-Release:        2%{?dist}
+Release:        15%{?dist}
 Summary:        Mustache for Python
 
 License:        MIT
