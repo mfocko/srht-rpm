@@ -6,7 +6,7 @@ Summary:        Profile and credential storage for Sourcehut
 License:        AGPL
 URL:            https://git.sr.ht/~sircmpwn/meta.sr.ht/
 Source0:        https://git.sr.ht/~sircmpwn/meta.sr.ht/archive/%{version}.tar.gz
-#Source1:        sourcehut-meta.conf
+Source1:        meta.ini
 Source2:        sourcehut-meta.service
 Source3:        meta-srht.conf
 Source4:        run-gunicorn.py
@@ -36,37 +36,36 @@ mkdir -p %{buildroot}/%{_bindir}
 mkdir -p %{buildroot}/%{_sysconfdir}/systemd/system
 mkdir -p %{buildroot}/%{_sysconfdir}/httpd/conf.d/
 
-cp config.example.ini %{buildroot}%{_sysconfdir}/sr.ht
-
-
 cp -r static %{buildroot}/usr/share/srht/meta/html/static
 
 install -m 0755 run.py %{buildroot}/usr/share/srht/meta/run.py
-install -m 0755 run-gunicorn.py %{buildroot}/usr/share/srht/meta/run-gunicorn.py
 
-# install -m 0755 metasrht-createuser %{buildroot}%{_bindir}/metasrht-createuser
-# install -m 0755 metasrht-daily %{buildroot}%{_bindir}/metasrht-daily
-# install -m 0755 metasrht-initdb %{buildroot}%{_bindir}/metasrht-initdb
-# install -m 0755 metasrht-invoicestats %{buildroot}%{_bindir}/metasrht-invoicestats
-# install -m 0755 metasrht-migrate %{buildroot}%{_bindir}/metasrht-migrate
-# install -m 0755 scripts/revoke-expired-tokens %{buildroot}%{_bindir}/metasrht-revoke-expired-tokens
 
+install -m 0755 metasrht-createuser %{buildroot}%{_bindir}/metasrht-createuser
+install -m 0755 metasrht-daily %{buildroot}%{_bindir}/metasrht-daily
+install -m 0755 metasrht-initdb %{buildroot}%{_bindir}/metasrht-initdb
+install -m 0755 metasrht-invoicestats %{buildroot}%{_bindir}/metasrht-invoicestats
+install -m 0755 metasrht-migrate %{buildroot}%{_bindir}/metasrht-migrate
+install -m 0755 scripts/revoke-expired-tokens %{buildroot}%{_bindir}/metasrht-revoke-expired-tokens
+
+cp %{SOURCE1} %{buildroot}/%{_sysconfdir}/sr.ht/meta.ini
 cp %{SOURCE2} %{buildroot}/%{_sysconfdir}/systemd/system/
 cp %{SOURCE3} %{buildroot}/%{_sysconfdir}/httpd/conf.d/meta-srht.conf
+cp %{SOURCE4} %{buildroot}/usr/share/srht/meta/run-gunicorn.py
 
 chmod a+xr -R %{buildroot}/usr/share/srht/
 
 %files
 %license LICENSE
 %doc README.md
-# %{_bindir}/metasrht-createuser
-# %{_bindir}/metasrht-daily
-# %{_bindir}/metasrht-initdb
-# %{_bindir}/metasrht-invoicestats
-# %{_bindir}/metasrht-migrate
-# %{_bindir}/metasrht-revoke-expired-tokens
+%{_bindir}/metasrht-createuser
+%{_bindir}/metasrht-daily
+%{_bindir}/metasrht-initdb
+%{_bindir}/metasrht-invoicestats
+%{_bindir}/metasrht-migrate
+%{_bindir}/metasrht-revoke-expired-tokens
 
-%config %{_sysconfdir}/sr.ht/config.example.ini
+%config %{_sysconfdir}/sr.ht/meta.ini
 %config %{_sysconfdir}/httpd/conf.d/meta-srht.conf
 %{_sysconfdir}/systemd/system/sourcehut-meta.service
 
