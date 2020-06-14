@@ -1,6 +1,6 @@
 Name:           sourcehut-hub
 Version:        0.4.0
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        Project hub for Sourcehut
 
 License:        AGPL
@@ -10,8 +10,8 @@ Source1:        sourcehut-hub.service
 Source2:        hub-srht.conf
 Source3:        hub-gunicorn-run.py
 Source4:        hub.ini
-BuildRequires:  python3-hubsrht
-Requires:       python3-hubsrht
+BuildRequires:  python3-hubsrht, sourcehut-core, python3-packaging
+Requires:       python3-hubsrht, sourcehut-core
 
 %global debug_package %{nil}
 

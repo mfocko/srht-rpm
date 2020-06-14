@@ -16,7 +16,7 @@ Project hub for Sourcehut
 
 %package -n python3-%{srcname}
 Summary:        %{summary}
-BuildRequires:  sourcehut-core
+BuildRequires:  sourcehut-core, python3-packaging
 Requires: sourcehut-core, python3-gunicorn, python3-packaging 
 
 %description -n python3-%{srcname}
