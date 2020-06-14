@@ -1,0 +1,8 @@
+[Unit]
+Description=SourceHut project hub
+
+[Service]
+Type=simple
+WorkingDirectory=/usr/share/srht/hub
+ExecStart=/usr/bin/gunicorn gunicorn-run:app -n hub.sr.ht -b [::]:53212
+
