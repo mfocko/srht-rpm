@@ -48,7 +48,8 @@ You are now using Sourcehut.
  * [![Copr build status](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/python-stripe/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/python-stripe/) `python-stripe` is a dependency not packaged by Fedora.
  * [![Copr build status](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/python-zxcvbn/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/python-zxcvbn/) `python-zxcvbn` is a dependency not packaged by Fedora.
  * [![Copr build status](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/python-misaka/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/python-misaka/) `python-misaka` is a dependency not packaged by Fedora. 
- * [![Copr build status](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/python-sshpubkeys/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/python-sshpubkeys/) `python-sshpubkeys` is a dependency not packaged by Fedora.  
+ * [![Copr build status](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/python-sshpubkeys/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/python-sshpubkeys/) `python-sshpubkeys` is a dependency not packaged by Fedora.
+ * [![Copr build status](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/python-minio/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/python-minio/) `python-minio` is a dependency not packaged by Fedora.
 
 
 # Puppet
