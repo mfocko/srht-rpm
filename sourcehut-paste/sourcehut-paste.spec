@@ -49,7 +49,6 @@ cp %{SOURCE4} %{buildroot}/%{_sysconfdir}/sr.ht/paste.ini
 
 
 %files
-%doc README.md
 %license LICENSE
 %{_sysconfdir}/sr.ht/paste.ini
 %{_sysconfdir}/systemd/system/sourcehut-paste.service
