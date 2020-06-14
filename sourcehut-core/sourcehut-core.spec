@@ -1,26 +1,31 @@
 Name:           sourcehut-core
 Version:        0.62.3
 Release:        1%{?dist}
-Summary:        SourceHut core functionality
+Summary:        Sourcehut core functionality
 
 License:        APGL
-URL:
+URL:            https://git.sr.ht/~sircmpwn/core.sr.ht/
 Source0:        https://git.sr.ht/~sircmpwn/core.sr.ht/archive/%{version}.tar.gz
 Source1:        core.ini
 
-BuildRequires:  
-Requires:       
+BuildRequires:  python3-srht
+Requires:       python3-srht
 
 %description
+Sourcehut core functionality
 
+%global debug_package %{nil}
 
 %prep
-%autosetup
+%autosetup -n core.sr.ht-%{version}
 
 
 %build
 
 %install
+mkdir -p %{buildroot}/%{_sysconfdir}/sr.ht/
+mkdir -p %{buildroot}/%{_bindir}
+
 install -m 0755 srht-keygen %{buildroot}/%{_bindir}/srht-keygen
 install -m 0755 srht-migrate %{buildroot}/%{_bindir}/srht-migrate
 install -m 0755 srht-replicate-db %{buildroot}/%{_bindir}/srht-replicate-db
