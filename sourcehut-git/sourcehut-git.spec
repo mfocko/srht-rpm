@@ -1,6 +1,6 @@
 Name:           sourcehut-git
 Version:        0.54.1
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Git services for Sourcehut
 
 License:        AGPL

@@ -2,7 +2,7 @@
 
 Name:           python-%{srcname}
 Version:        0.54.1
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Git service for Sourcehut
 
 License:        AGPL
