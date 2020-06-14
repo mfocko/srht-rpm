@@ -6,8 +6,8 @@ Release:        1%{?dist}
 Summary:        Scm service for Sourcehut
 
 License:        AGPL
-URL:            https://scm.sr.ht/~sircmpwn/scm.sr.ht/
-Source0:        https://scm.sr.ht/~sircmpwn/scm.sr.ht/archive/%{version}.tar.gz
+URL:            https://git.sr.ht/~sircmpwn/scm.sr.ht/
+Source0:        https://git.sr.ht/~sircmpwn/scm.sr.ht/archive/%{version}.tar.gz
 
 BuildArch:      noarch
 
