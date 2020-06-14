@@ -6,7 +6,7 @@ Summary:        Hg services for Sourcehut
 License:        AGPL
 URL:            https://hg.sr.ht/~sircmpwn/hg.sr.ht/
 Source0:        https://hg.sr.ht/~sircmpwn/hg.sr.ht/archive/%{version}.tar.gz
-Source1:        hg-git.service
+Source1:        sourcehut-hg.service
 Source2:        hg-srht.conf
 Source3:        hg-gunicorn-run.py
 Source4:        hg.ini
