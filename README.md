@@ -43,6 +43,9 @@ You are now using Sourcehut.
  * [![Copr build status](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/sourcehut-hub/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/sourcehut-hub/) `sourcehut-hub` is the web interface and configuration for Sourcehut project hub
  * [![Copr build status](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/python-todosrht/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/python-todosrht/) `python-todosrht` is the Python library for Sourcehut tickets
  * [![Copr build status](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/sourcehut-todo/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/sourcehut-todo/) `sourcehut-todo` is the web interface for Sourcehut tickets
+ * [![Copr build status](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/python-pastesrht/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/python-pastesrht/) `python-pastesrht` is the Python library for Sourcehut pastebin
+ * [![Copr build status](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/sourcehut-paste/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/sourcehut-paste/) `sourcehut-paste` is the web interface for Sourcehut pastebin
+ 
 
 ### Dependencies
  * [![Copr build status](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/python-pytest-mock/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/python-pytest-mock/) `python-pytest-mock` is a dependency not packaged by Fedora.
