@@ -2,12 +2,13 @@
 
 Name:           python-%{srcname}
 Version:        0.4.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Project hub for Sourcehut
 
-License:        BSD
+License:        AGPL
 URL:            https://git.sr.ht/~sircmpwn/hub.sr.ht/
 Source0:        https://git.sr.ht/~sircmpwn/hub.sr.ht/archive/%{version}.tar.gz
+
 BuildArch:      noarch
 
 %description
@@ -29,14 +30,17 @@ Project hub for Sourcehut
 
 %install
 %py3_install
+
+## These are autoinstalled, but should be packaged by sourcehut-meta.
+## The two packages could conceivably be combined into a single Specfile.
 rm %{buildroot}/%{_bindir}/hubsrht-*
 
-# %check
-# %{python3} setup.py test
+%check
+%{python3} setup.py test
 
 # Note that there is no %%files section for the unversioned python module
 %files -n python3-%{srcname}
 %doc README.md
 %license LICENSE
-/usr/lib/python3.8/site-packages/hubsrht-0.0.0-py3.8.egg-info
-/usr/lib/python3.8/site-packages/hubsrht
+%{python3_sitelib}/%{srcname}-*.egg-info
+%{python3_sitelib}/%{srcname}/
