@@ -33,20 +33,16 @@ tar xf ./v4.5.0.tar.gz
 %install
 %py3_install
 
+rm %{buildroot}/%{_bindir}/srht-*
+
 cp -r ./bootstrap-4.5.0 $RPM_BUILD_ROOT/usr/lib/python3.8/site-packages/%{srcname}/scss/bootstrap
 
-#%check
-#%{python3} setup.py test
+# %check
+# %{python3} setup.py test
 
 # Note that there is no %%files section for the unversioned python module
 %files -n python3-%{srcname}
-#%{python3_sitelib}/%{srcname}-*.egg-info/
-#%{python3_sitelib}/%{srcname}/
-#%{_bindir}/sample-exec
-#%doc /usr/share/doc/python3-srht/README.md
-#%license /usr/share/licenses/python3-srht/LICENSE
+%doc README.md
+%license LICENSE
 /usr/lib/python3.8/site-packages/srht-0.0.0-py3.8.egg-info
 /usr/lib/python3.8/site-packages/srht
-#%{_bindir}/srht-migrate
-#%{_bindir}/srht-update-profiles
-#%{_bindir}/srht-keygen
