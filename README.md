@@ -56,6 +56,9 @@ You are now using Sourcehut.
  * [![Copr build status](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/python-sshpubkeys/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/python-sshpubkeys/) `python-sshpubkeys` is a dependency not packaged by Fedora.
  * [![Copr build status](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/python-minio/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/python-minio/) `python-minio` is a dependency not packaged by Fedora.
 
+### Other
+ * [![Copr build status](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/aerc/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/aerc/) `aerc` is a mailclient. It's not part of sourcehut, but may be useful with it.
+
 
 # Puppet
 
