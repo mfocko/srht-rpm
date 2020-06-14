@@ -16,7 +16,7 @@ Scmdata service for Sourcehut
 
 %package -n python3-%{srcname}
 Summary:        %{summary}
-BuildRequires:  python3-devel, python3-srht, sassc, node, npm, scm
+BuildRequires:  python3-devel, python3-srht, sassc, node, npm, git
 Requires: python3-srht, python3-packaging
 
 %description -n python3-%{srcname}
