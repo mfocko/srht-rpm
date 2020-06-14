@@ -1,0 +1,8 @@
+[Unit]
+Description=SourceHut metadata and accounts service -- API
+
+[Service]
+Type=simple
+WorkingDirectory=/usr/share/srht/meta
+ExecStart=/usr/bin/metasrht-api
+
