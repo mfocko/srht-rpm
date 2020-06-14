@@ -1,0 +1,9 @@
+[Unit]
+Description=SourceHut hg services
+Requires=sourcehut-hg.timer
+
+[Service]
+Type=simple
+WorkingDirectory=/usr/share/srht/hg
+ExecStart=/usr/bin/gunicorn gunicorn-run:app -n hg.sr.ht -b [::]:53215
+
