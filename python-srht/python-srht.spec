@@ -47,6 +47,6 @@ cp -r ./bootstrap-4.5.0 $RPM_BUILD_ROOT/usr/lib/python3.8/site-packages/%{srcnam
 #%license /usr/share/licenses/python3-srht/LICENSE
 /usr/lib/python3.8/site-packages/srht-0.0.0-py3.8.egg-info
 /usr/lib/python3.8/site-packages/srht
-%{_bindir}/srht-migrate
-%{_bindir}/srht-update-profiles
-%{_bindir}/srht-keygen
+#%{_bindir}/srht-migrate
+#%{_bindir}/srht-update-profiles
+#%{_bindir}/srht-keygen
