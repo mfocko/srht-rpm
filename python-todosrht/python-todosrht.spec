@@ -2,7 +2,7 @@
 
 Name:           python-%{srcname}
 Version:        0.58.4
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Ticketing for Sourcehut
 
 License:        AGPL
