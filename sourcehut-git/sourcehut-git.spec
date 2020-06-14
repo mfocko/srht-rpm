@@ -26,20 +26,20 @@ Git services for Sourcehut
 %build
 %py3_build
 
-# cd api/
-# go build server.go
+cd api/
+go build 
 
 cd gitsrht-dispatch/
-go build main.go
+go build 
 
 cd ../gitsrht-keys/
-go build main.go
+go build 
 
 cd ../gitsrht-shell/
-go build main.go
+go build 
 
 cd ../gitsrht-update-hook/
-go build main.go
+go build 
 
 cd ..
 
@@ -60,10 +60,10 @@ install -m 0755 gitsrht-migrate %{buildroot}/%{_bindir}/gitsrht-migrate
 install -m 0755 gitsrht-periodic %{buildroot}/%{_bindir}/gitsrht-periodic
 install -m 0755 cloneperf %{buildroot}/%{_bindir}/cloneperf
 
-install -m 0755 gitsrht-dispatch/main %{buildroot}/%{_bindir}/gitsrht-dispatch
-install -m 0755 gitsrht-keys/main %{buildroot}/%{_bindir}/gitsrht-keys
-install -m 0755 gitsrht-shell/main %{buildroot}/%{_bindir}/gitsrht-shell
-install -m 0755 gitsrht-update-hook/main %{buildroot}/%{_bindir}/gitsrht-update-hook
+install -m 0755 gitsrht-dispatch/gitsrht-dispatch %{buildroot}/%{_bindir}/gitsrht-dispatch
+install -m 0755 gitsrht-keys/gitsrht-keys %{buildroot}/%{_bindir}/gitsrht-keys
+install -m 0755 gitsrht-shell/gitsrht-shell %{buildroot}/%{_bindir}/gitsrht-shell
+install -m 0755 gitsrht-update-hook/gitsrht-update-hook %{buildroot}/%{_bindir}/gitsrht-update-hook
 
 install -m 0755 run.py %{buildroot}/usr/share/srht/git/run.py
 
