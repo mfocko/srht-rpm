@@ -47,4 +47,19 @@ You are now using Sourcehut.
  * [![Copr build status](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/python-misaka/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/python-misaka/) `python-misaka` is a dependency not packaged by Fedora. 
  * [![Copr build status](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/python-sshpubkeys/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/python-sshpubkeys/) `python-sshpubkeys` is a dependency not packaged by Fedora.  
 
- 
+
+# Puppet
+
+Work on a Puppet module to deploy this Sourcehut system is in progress.
+A full installation would be achieved with:
+
+````
+node "srht.example.com" {
+	include sourcehut
+}
+````
+
+# License
+
+The specfiles are released under GPLv3; the packages built retain the license of
+the upstream as indicated in the Specfile.
