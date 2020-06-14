@@ -3,7 +3,7 @@
 Name:           python-%{srcname}
 Version:        2.1.1
 Release:        2%{?dist}
-Summary:        Example python module
+Summary:        A CFFI binding for Hoedown, a markdown parsing library.
 
 License:        BSD
 URL:            https://pypi.org/project/%{srcname}/
@@ -12,7 +12,7 @@ Source0:        %{pypi_source}
 BuildArch:      x86_64
 
 %global _description %{expand:
-A CFFI binding for Hoedown (version 3), a markdown parsing library.}
+A CFFI binding for Hoedown, a markdown parsing library.}
 
 %description %_description
 
