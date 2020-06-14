@@ -11,8 +11,8 @@ Source2:        sourcehut-meta.service
 Source3:        meta-srht.conf
 Source4:        meta-gunicorn-run.py
 Source5:        sourcehut-meta-api.service
-BuildRequires:  python3-srht, python3-metasrht, sassc, sourcehut-core, golang
-Requires:       python3-metasrht, sassc, python3-gunicorn, sourcehut-core, golang
+BuildRequires:  python3-srht, python3-metasrht, sassc, sourcehut-core, golang, git
+Requires:       python3-metasrht, sassc, python3-gunicorn, sourcehut-core, golang, git
 
 %description
 
