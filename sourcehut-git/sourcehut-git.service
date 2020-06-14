@@ -5,5 +5,5 @@ Requires=sourcehut-git.timer
 [Service]
 Type=simple
 WorkingDirectory=/usr/share/srht/git
-ExecStart=/usr/bin/gunicorn gunicorn-run:app -n hub.sr.ht -b [::]:53214
+ExecStart=/usr/bin/gunicorn gunicorn-run:app -n git.sr.ht -b [::]:53214
 
