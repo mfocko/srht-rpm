@@ -1,6 +1,6 @@
 Name:           sourcehut-core
 Version:        0.62.3
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Sourcehut core functionality
 
 License:        APGL

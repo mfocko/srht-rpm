@@ -2,7 +2,7 @@
 
 Name:           python-%{srcname}
 Version:        0.44.2
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        Metadata service for Sourcehut
 
 License:        BSD
