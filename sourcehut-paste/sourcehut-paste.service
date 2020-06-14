@@ -1,0 +1,8 @@
+[Unit]
+Description=SourceHut pastebin service
+
+[Service]
+Type=simple
+WorkingDirectory=/usr/share/srht/paste
+ExecStart=/usr/bin/gunicorn gunicorn-run:app -n paste.sr.ht -b [::]:53216
+
