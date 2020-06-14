@@ -1,41 +1,56 @@
-%global goipath         git.sr.ht/~sircmpwn/aerc/
-Version:                0.4.0
-
-%gometa
-
-%global common_description %{expand:
-aerc is a mail client.}
-
-%global golicenses    MIT
-
-Name:           %{goname}
+Name:           aerc
+Version:        0.4.0
 Release:        1%{?dist}
-Summary:        A TUI mail client
-License:        BSD
-URL:            %{gourl}
-Source0:        %{gosource}
+Summary:        A mail client
 
-BuildRequires: golang(github.com/davecgh/go-spew/spew)
-BuildRequires: golang(github.com/pmezard/go-difflib/difflib)
-BuildRequires: golang(github.com/stretchr/objx)
+License:        MIT
+URL:            https://aerc-mail.org
+Source0:        https://git.sr.ht/~sircmpwn/aerc/archive/0.4.0.tar.gz
+
+BuildRequires:  golang, scdoc
+Requires:       golang, scdoc
+
+%global debug_package %{nil}
 
 %description
-%{common_description}
-
-%gopkg
+A mail client
 
 %prep
-%goprep
+%autosetup
+
+
+%build
+%make_build
+
 
 %install
-%gopkginstall
+rm -rf $RPM_BUILD_ROOT
+%make_install
 
-%check
-%gochecks
 
-%gopkgfiles
-
+%files
+%license LICENSE
+%doc README.md
+/usr/local/bin/aerc
+/usr/local/share/aerc/accounts.conf
+/usr/local/share/aerc/aerc.conf
+/usr/local/share/aerc/binds.conf
+/usr/local/share/aerc/filters/hldiff
+/usr/local/share/aerc/filters/html
+/usr/local/share/aerc/filters/plaintext
+/usr/local/share/aerc/templates/forward_as_body
+/usr/local/share/aerc/templates/quoted_reply
+/usr/local/share/man/man1/aerc-search.1
+/usr/local/share/man/man1/aerc.1
+/usr/local/share/man/man5/aerc-config.5
+/usr/local/share/man/man5/aerc-imap.5
+/usr/local/share/man/man5/aerc-maildir.5
+/usr/local/share/man/man5/aerc-notmuch.5
+/usr/local/share/man/man5/aerc-sendmail.5
+/usr/local/share/man/man5/aerc-smtp.5
+/usr/local/share/man/man7/aerc-templates.7
+/usr/local/share/man/man7/aerc-tutorial.7
 
 %changelog
-* Thu Mar 21 22:20:22 CET 2019 Robert-André Mauchin <zebob.m@gmail.com> - 1.2.2-1
-- First package for Fedora
+* Sun Jun 14 2020 Tyler Griffiths <t@tyjgr.com>
+- 
