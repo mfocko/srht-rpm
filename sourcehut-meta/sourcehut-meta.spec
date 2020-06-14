@@ -1,6 +1,6 @@
 Name:           sourcehut-meta
 Version:        0.44.2
-Release:        7%{?dist}
+Release:        8%{?dist}
 Summary:        Profile and credential storage for Sourcehut
 
 License:        AGPL
@@ -9,7 +9,7 @@ Source0:        https://git.sr.ht/~sircmpwn/meta.sr.ht/archive/%{version}.tar.gz
 Source1:        meta.ini
 Source2:        sourcehut-meta.service
 Source3:        meta-srht.conf
-Source4:        run-gunicorn.py
+Source4:        meta-gunicorn-run.py
 BuildRequires:  python3-srht, python3-metasrht, sassc
 Requires:       python3-srht, python3-metasrht, sassc, python3-gunicorn
 
@@ -51,7 +51,7 @@ install -m 0755 scripts/revoke-expired-tokens %{buildroot}%{_bindir}/metasrht-re
 cp %{SOURCE1} %{buildroot}/%{_sysconfdir}/sr.ht/meta.ini
 cp %{SOURCE2} %{buildroot}/%{_sysconfdir}/systemd/system/
 cp %{SOURCE3} %{buildroot}/%{_sysconfdir}/httpd/conf.d/meta-srht.conf
-cp %{SOURCE4} %{buildroot}/usr/share/srht/meta/run-gunicorn.py
+cp %{SOURCE4} %{buildroot}/usr/share/srht/meta/gunicorn-run.py
 
 chmod a+xr -R %{buildroot}/usr/share/srht/
 

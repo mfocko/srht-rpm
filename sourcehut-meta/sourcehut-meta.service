@@ -3,5 +3,6 @@ Description=SourceHut metadata and accounts service
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/gunicorn /usr/share/srht/meta/run-gunicorn.py -n meta.sr.ht -b [::]:53211
+WorkingDirectory=/usr/share/srht/meta
+ExecStart=/usr/bin/gunicorn gunicorn-run:app -n meta.sr.ht -b [::]:53211
 
