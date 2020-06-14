@@ -29,7 +29,7 @@ Git services for Sourcehut
 cd api/
 go build 
 
-cd gitsrht-dispatch/
+cd ../gitsrht-dispatch/
 go build 
 
 cd ../gitsrht-keys/
