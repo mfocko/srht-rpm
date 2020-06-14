@@ -35,12 +35,9 @@ Project hub for Sourcehut
 ## The two packages could conceivably be combined into a single Specfile.
 rm %{buildroot}/%{_bindir}/hubsrht-*
 
-%check
-%{python3} setup.py test
-
 # Note that there is no %%files section for the unversioned python module
 %files -n python3-%{srcname}
 %doc README.md
 %license LICENSE
-%{python3_sitelib}/%{srcname}-*.egg-info/
+%{python3_sitelib}/%{srcname}-*.egg-info
 %{python3_sitelib}/%{srcname}/
