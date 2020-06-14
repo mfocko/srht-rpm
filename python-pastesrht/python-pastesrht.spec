@@ -36,7 +36,6 @@ rm %{buildroot}/%{_bindir}/pastesrht-*
 
 # Note that there is no %%files section for the unversioned python module
 %files -n python3-%{srcname}
-%doc README.md
 %license LICENSE
 /usr/lib/python3.8/site-packages/pastesrht-0.0.0-py3.8.egg-info
 /usr/lib/python3.8/site-packages/pastesrht
