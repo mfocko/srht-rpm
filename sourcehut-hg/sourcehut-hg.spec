@@ -12,7 +12,7 @@ Source3:        hg-gunicorn-run.py
 Source4:        hg.ini
 Source5:        sourcehut-hg.timer
 BuildRequires:  python3-scmsrht, python3-devel, python3-hgsrht, sourcehut-core, sourcehut-meta, sassc, node, npm, hg, golang, git
-Requires:       python3-scmsrht, python3-hgsrht, python3-hglib, python3-minio, python3-unidiff, sourcehut-core, sourcehut-meta, python3-gunicorn, golang, hg, git
+Requires:       python3-scmsrht, python3-hgsrht, python3-hglib, python3-minio, python3-unidiff, sourcehut-core, sourcehut-meta, python3-gunicorn, golang, hg, git, mercurial-py3
 
 %global debug_package %{nil}
 
