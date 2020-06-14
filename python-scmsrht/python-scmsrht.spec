@@ -31,9 +31,6 @@ Scm service for Sourcehut
 %install
 %py3_install
 
-## These are autoinstalled, but should be packaged by sourcehut-scm.
-## The two packages could conceivably be combined into a single Specfile.
-rm %{buildroot}/%{_bindir}/scmsrht-*
 
 #%check
 #%{python3} setup.py test
