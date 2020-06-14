@@ -60,6 +60,7 @@ install -m 0755 gitsrht-migrate %{buildroot}/%{_bindir}/gitsrht-migrate
 install -m 0755 gitsrht-periodic %{buildroot}/%{_bindir}/gitsrht-periodic
 install -m 0755 cloneperf %{buildroot}/%{_bindir}/cloneperf
 
+install -m 0755 api/api %{buildroot}/%{_bindir}/gitsrht-api
 install -m 0755 gitsrht-dispatch/gitsrht-dispatch %{buildroot}/%{_bindir}/gitsrht-dispatch
 install -m 0755 gitsrht-keys/gitsrht-keys %{buildroot}/%{_bindir}/gitsrht-keys
 install -m 0755 gitsrht-shell/gitsrht-shell %{buildroot}/%{_bindir}/gitsrht-shell
@@ -88,6 +89,7 @@ cp %{SOURCE4} %{buildroot}/%{_sysconfdir}/sr.ht/git.ini
 %{_bindir}/gitsrht-keys
 %{_bindir}/gitsrht-shell
 %{_bindir}/gitsrht-update-hook
+%{_bindir}/gitsrht-api
 /usr/share/srht/git/run.py
 /usr/share/srht/git/gunicorn-run.py
 /usr/share/srht/git/html
