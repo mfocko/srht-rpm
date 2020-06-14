@@ -29,6 +29,10 @@ Core Python library for Sourcehut
 %install
 %py3_install
 
+## These are autoinstalled, but should be packaged by sourcehut-meta.
+## The two packages could conceivably be combined into a single Specfile.
+rm %{buildroot}/%{_bindir}/metasrht-*
+
 %check
 %{python3} setup.py test
 
@@ -36,8 +40,3 @@ Core Python library for Sourcehut
 %files -n python3-%{srcname}
 %{python3_sitelib}/%{srcname}-*.egg-info/
 %{python3_sitelib}/%{srcname}/
-%{_bindir}/metasrht-createuser
-%{_bindir}/metasrht-daily
-%{_bindir}/metasrht-initdb
-%{_bindir}/metasrht-invoicestats
-%{_bindir}/metasrht-migrate
