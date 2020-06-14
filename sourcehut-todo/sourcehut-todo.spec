@@ -10,8 +10,9 @@ Source1:        sourcehut-todo.service
 Source2:        todo-srht.conf
 Source3:        todo-gunicorn-run.py
 Source4:        todo.ini
-BuildRequires:  python3-todosrht
-Requires:       python3-todosrht
+BuildRequires:  python3-devel, python3-todosrht, sourcehut-core, sourcehut-meta, sassc, node, npm, git
+Requires:       python3-todosrht, sourcehut-core, sourcehut-meta, python3-gunicorn
+
 
 %global debug_package %{nil}
 

@@ -10,8 +10,8 @@ Source1:        sourcehut-hub.service
 Source2:        hub-srht.conf
 Source3:        hub-gunicorn-run.py
 Source4:        hub.ini
-BuildRequires:  python3-hubsrht, sourcehut-core, python3-packaging
-Requires:       python3-hubsrht, sourcehut-core
+BuildRequires:  python3-devel, python3-hubsrht, sourcehut-core, sourcehut-meta, sassc, node, npm, git
+Requires:       python3-hubsrht, sourcehut-core, sourcehut-meta, python3-gunicorn
 
 %global debug_package %{nil}
 
