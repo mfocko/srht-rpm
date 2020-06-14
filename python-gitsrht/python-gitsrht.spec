@@ -42,5 +42,5 @@ rm %{buildroot}/%{_bindir}/gitsrht-*
 %files -n python3-%{srcname}
 %doc README.md
 %license LICENSE
-%{python3_sitelib}/%{srcname}-*.egg-info/
+%{python3_sitelib}/%{srcname}-*.egg-info
 %{python3_sitelib}/%{srcname}/
