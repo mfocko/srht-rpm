@@ -1,0 +1,8 @@
+[Unit]
+Description=Timers for Sourcehut Git
+
+[Timer]
+## Run every twenty minutes
+OnCalendar=*:0/20
+ExecStart=/usr/bin/gitsrht-periodic
+
