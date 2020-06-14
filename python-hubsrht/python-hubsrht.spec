@@ -2,7 +2,7 @@
 
 Name:           python-%{srcname}
 Version:        0.4.0
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        Project hub for Sourcehut
 
 License:        AGPL
@@ -27,6 +27,7 @@ Project hub for Sourcehut
 
 %build
 %py3_build
+cat /var/tmp/rpm-tmp.*
 
 %install
 %py3_install
