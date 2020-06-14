@@ -2,7 +2,7 @@
 
 Name:           python-%{srcname}
 Version:        0.4.0
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Project hub for Sourcehut
 
 License:        AGPL
@@ -16,8 +16,8 @@ Project hub for Sourcehut
 
 %package -n python3-%{srcname}
 Summary:        %{summary}
-BuildRequires:  python3-srht, sassc, node, npm
-Requires:       python3-srht
+BuildRequires:  sourcehut-core
+Requires: sourcehut-core, python3-gunicorn
 
 %description -n python3-%{srcname}
 Project hub for Sourcehut
@@ -42,5 +42,5 @@ rm %{buildroot}/%{_bindir}/hubsrht-*
 %files -n python3-%{srcname}
 %doc README.md
 %license LICENSE
-%{python3_sitelib}/%{srcname}-*.egg-info
+%{python3_sitelib}/%{srcname}-*.egg-info/
 %{python3_sitelib}/%{srcname}/
