@@ -1,6 +1,6 @@
 Name:           sourcehut-hg
 Version:        0.26.6
-Release:        5%{?dist}
+Release:        6%{?dist}
 Summary:        Hg services for Sourcehut
 
 License:        AGPL
