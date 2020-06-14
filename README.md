@@ -28,6 +28,7 @@ You are now using Sourcehut.
 ## Packages
 
  * [![Copr build status](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/python-srht/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/python-srht/) `python-srht` is the core Python library for all Sourcehut services
+ * [![Copr build status](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/sourcehut-core/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/python-srht/) `sourcehut-core` covers core functionality and configuration
  * [![Copr build status](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/python-metasrht/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/python-metasrht/) `python-metasrht` is the Python library for Sourcehut metadata services
  * [![Copr build status](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/sourcehut-meta/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/sourcehut-meta/) `sourcehut-meta` is the web interface for Sourcehut metadata services
  * [![Copr build status](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/python-pytest-mock/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/python-pytest-mock/) `python-pytest-mock` is a dependency not packaged by Fedora.
