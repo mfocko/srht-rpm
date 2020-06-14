@@ -26,7 +26,6 @@ Core Python library for Sourcehut
 %autosetup -n meta.sr.ht-%{version}
 
 %build
-cat /var/tmp/rpm-tmp.*
 %py3_build
 
 %install
