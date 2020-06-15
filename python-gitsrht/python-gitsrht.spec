@@ -1,7 +1,7 @@
 %global srcname gitsrht
 
 Name:           python-%{srcname}
-Version:        0.54.1
+Version:        0.54.2
 Release:        2%{?dist}
 Summary:        Git service for Sourcehut
 

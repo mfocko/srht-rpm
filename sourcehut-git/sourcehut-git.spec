@@ -1,5 +1,5 @@
 Name:           sourcehut-git
-Version:        0.54.1
+Version:        0.54.2
 Release:        10%{?dist}
 Summary:        Git services for Sourcehut
 
@@ -71,7 +71,7 @@ install -m 0755 gitsrht-update-hook/gitsrht-update-hook %{buildroot}/%{_bindir}/
 install -m 0755 run.py %{buildroot}/usr/share/srht/git/run.py
 
 cp %{SOURCE1} %{buildroot}/%{_sysconfdir}/systemd/system/sourcehut-git.service
-cp %{SOURCE2} %{buildroot}/%{_sysconfdir}/httpd/conf.d/git-srht.conf
+cp %{SOURCE2} %{buildroot}/%{_sysconfdir}/httpd/conf.d/50-git-srht.conf
 install -m 0755 %{SOURCE3} %{buildroot}/usr/share/srht/git/gunicorn-run.py
 cp %{SOURCE4} %{buildroot}/%{_sysconfdir}/sr.ht/git.ini
 cp %{SOURCE5} %{buildroot}/%{_sysconfdir}/systemd/system/sourcehut-git.timer
@@ -85,7 +85,7 @@ cp %{SOURCE6} %{buildroot}/%{_sysconfdir}/systemd/system/sourcehut-git-api.servi
 %{_sysconfdir}/systemd/system/sourcehut-git.service
 %{_sysconfdir}/systemd/system/sourcehut-git.timer
 %{_sysconfdir}/systemd/system/sourcehut-git-api.service
-%{_sysconfdir}/httpd/conf.d/git-srht.conf
+%{_sysconfdir}/httpd/conf.d/50-git-srht.conf
 %{_bindir}/gitsrht-initdb
 %{_bindir}/gitsrht-migrate
 %{_bindir}/gitsrht-periodic
