@@ -42,7 +42,7 @@ install -m 0755 todosrht-migrate %{buildroot}/%{_bindir}/todosrht-migrate
 install -m 0755 run.py %{buildroot}/usr/share/srht/todo/run.py
 
 cp %{SOURCE1} %{buildroot}/%{_sysconfdir}/systemd/system/sourcehut-todo.service
-cp %{SOURCE2} %{buildroot}/%{_sysconfdir}/httpd/conf.d/todo-srht.conf
+cp %{SOURCE2} %{buildroot}/%{_sysconfdir}/httpd/conf.d/50-todo-srht.conf
 install -m 0755 %{SOURCE3} %{buildroot}/usr/share/srht/todo/gunicorn-run.py
 cp %{SOURCE4} %{buildroot}/%{_sysconfdir}/sr.ht/todo.ini
 
@@ -53,7 +53,7 @@ cp %{SOURCE4} %{buildroot}/%{_sysconfdir}/sr.ht/todo.ini
 %license LICENSE
 %{_sysconfdir}/sr.ht/todo.ini
 %{_sysconfdir}/systemd/system/sourcehut-todo.service
-%{_sysconfdir}/httpd/conf.d/todo-srht.conf
+%{_sysconfdir}/httpd/conf.d/50-todo-srht.conf
 %{_bindir}/todosrht-initdb
 %{_bindir}/todosrht-migrate
 /usr/share/srht/todo/run.py
