@@ -15,12 +15,6 @@ BuildRequires:  python3-devel
 BuildRequires:  python3dist(importlib-metadata)
 BuildRequires:  python3dist(jaraco.packaging) >= 3.2
 BuildRequires:  python3dist(jeepney) >= 0.4.2
-BuildRequires:  (python3dist(pytest) >= 3.5 with (python3dist(pytest) < 3.7.3 or python3dist(pytest) > 3.7.3))
-BuildRequires:  python3dist(pytest-black) >= 0.3.7
-BuildRequires:  python3dist(pytest-checkdocs) >= 1.2.3
-BuildRequires:  python3dist(pytest-cov)
-BuildRequires:  python3dist(pytest-flake8)
-BuildRequires:  ((python3dist(pywin32-ctypes) < 0.1.1 or python3dist(pywin32-ctypes) > 0.1.1) with (python3dist(pywin32-ctypes) < 0.1 or python3dist(pywin32-ctypes) > 0.1))
 BuildRequires:  python3dist(rst.linker) >= 1.9
 BuildRequires:  python3dist(secretstorage) >= 3
 BuildRequires:  python3dist(setuptools)
