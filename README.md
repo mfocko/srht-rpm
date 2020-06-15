@@ -63,6 +63,27 @@ You are now using Sourcehut.
  * [![Copr build status](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/aerc/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/aerc/) `aerc` is a mailclient. It's not part of sourcehut, but may be useful with it.
 
 
+# Status
+
+The following components are considered stable:
+ * meta
+ * core
+ * scm
+ * hub
+ * git
+ 
+The following components are WIP or have major known issues:
+ * hg
+ * todo 
+ 
+The following components are unstarted:
+ * builds
+ * lists
+ * man
+ * dispatch
+ 
+
+
 # Puppet
 
 Work on a Puppet module to deploy this Sourcehut system is in progress.
