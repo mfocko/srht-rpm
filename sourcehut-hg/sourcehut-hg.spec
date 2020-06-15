@@ -1,6 +1,6 @@
 Name:           sourcehut-hg
 Version:        0.26.6
-Release:        9%{?dist}
+Release:        10%{?dist}
 Summary:        Hg services for Sourcehut
 
 License:        AGPL
@@ -56,7 +56,7 @@ install -m 0755 run.py %{buildroot}/usr/share/srht/hg/run.py
 
 cp %{SOURCE1} %{buildroot}/%{_sysconfdir}/systemd/system/sourcehut-hg.service
 cp %{SOURCE5} %{buildroot}/%{_sysconfdir}/systemd/system/sourcehut-hg.timer
-cp %{SOURCE2} %{buildroot}/%{_sysconfdir}/httpd/conf.d/hg-srht.conf
+cp %{SOURCE2} %{buildroot}/%{_sysconfdir}/httpd/conf.d/50-hg-srht.conf
 install -m 0755 %{SOURCE3} %{buildroot}/usr/share/srht/hg/gunicorn-run.py
 cp %{SOURCE4} %{buildroot}/%{_sysconfdir}/sr.ht/hg.ini
 
@@ -68,7 +68,7 @@ cp %{SOURCE4} %{buildroot}/%{_sysconfdir}/sr.ht/hg.ini
 %{_sysconfdir}/sr.ht/hg.ini
 %{_sysconfdir}/systemd/system/sourcehut-hg.service
 %{_sysconfdir}/systemd/system/sourcehut-hg.timer
-%{_sysconfdir}/httpd/conf.d/hg-srht.conf
+%{_sysconfdir}/httpd/conf.d/50-hg-srht.conf
 /usr/share/srht/hg/run.py
 /usr/share/srht/hg/gunicorn-run.py
 /usr/share/srht/hg/html

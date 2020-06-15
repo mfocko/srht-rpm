@@ -1,6 +1,6 @@
 Name:           sourcehut-paste
 Version:        0.10.5
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        Pastebin for Sourcehut
 
 License:        AGPL
@@ -42,7 +42,7 @@ install -m 0755 pastesrht-migrate %{buildroot}/%{_bindir}/pastesrht-migrate
 install -m 0755 run.py %{buildroot}/usr/share/srht/paste/run.py
 
 cp %{SOURCE1} %{buildroot}/%{_sysconfdir}/systemd/system/sourcehut-paste.service
-cp %{SOURCE2} %{buildroot}/%{_sysconfdir}/httpd/conf.d/paste-srht.conf
+cp %{SOURCE2} %{buildroot}/%{_sysconfdir}/httpd/conf.d/50-paste-srht.conf
 install -m 0755 %{SOURCE3} %{buildroot}/usr/share/srht/paste/gunicorn-run.py
 cp %{SOURCE4} %{buildroot}/%{_sysconfdir}/sr.ht/paste.ini
 
@@ -52,7 +52,7 @@ cp %{SOURCE4} %{buildroot}/%{_sysconfdir}/sr.ht/paste.ini
 %license LICENSE
 %{_sysconfdir}/sr.ht/paste.ini
 %{_sysconfdir}/systemd/system/sourcehut-paste.service
-%{_sysconfdir}/httpd/conf.d/paste-srht.conf
+%{_sysconfdir}/httpd/conf.d/50-paste-srht.conf
 %{_bindir}/pastesrht-initdb
 %{_bindir}/pastesrht-migrate
 /usr/share/srht/paste/run.py

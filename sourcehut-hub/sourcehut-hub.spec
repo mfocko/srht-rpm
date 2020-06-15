@@ -1,6 +1,6 @@
 Name:           sourcehut-hub
 Version:        0.4.0
-Release:        4%{?dist}
+Release:        5%{?dist}
 Summary:        Project hub for Sourcehut
 
 License:        AGPL
@@ -41,7 +41,7 @@ install -m 0755 hubsrht-migrate %{buildroot}/%{_bindir}/hubsrht-migrate
 install -m 0755 run.py %{buildroot}/usr/share/srht/hub/run.py
 
 cp %{SOURCE1} %{buildroot}/%{_sysconfdir}/systemd/system/sourcehut-hub.service
-cp %{SOURCE2} %{buildroot}/%{_sysconfdir}/httpd/conf.d/hub-srht.conf
+cp %{SOURCE2} %{buildroot}/%{_sysconfdir}/httpd/conf.d/50-hub-srht.conf
 install -m 0755 %{SOURCE3} %{buildroot}/usr/share/srht/hub/gunicorn-run.py
 cp %{SOURCE4} %{buildroot}/%{_sysconfdir}/sr.ht/hub.ini
 
@@ -52,7 +52,7 @@ cp %{SOURCE4} %{buildroot}/%{_sysconfdir}/sr.ht/hub.ini
 %license LICENSE
 %{_sysconfdir}/sr.ht/hub.ini
 %{_sysconfdir}/systemd/system/sourcehut-hub.service
-%{_sysconfdir}/httpd/conf.d/hub-srht.conf
+%{_sysconfdir}/httpd/conf.d/50-hub-srht.conf
 %{_bindir}/hubsrht-initdb
 %{_bindir}/hubsrht-migrate
 /usr/share/srht/hub/run.py
