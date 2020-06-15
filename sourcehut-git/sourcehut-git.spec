@@ -10,7 +10,7 @@ Source1:        sourcehut-git.service
 Source2:        git-srht.conf
 Source3:        git-gunicorn-run.py
 Source4:        git.ini
-Source4:        sourcehut-git.timer
+Source5:        sourcehut-git.timer
 BuildRequires:  python3-scmsrht, python3-devel, python3-gitsrht, sourcehut-core, sourcehut-meta, sassc, node, npm, git, golang
 Requires:       python3-scmsrht, python3-gitsrht, python3-pygit2, python3-minio, sourcehut-core, sourcehut-meta, python3-gunicorn, golang
 
