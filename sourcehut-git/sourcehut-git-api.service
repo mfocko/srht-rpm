@@ -1,0 +1,8 @@
+[Unit]
+Description=SourceHut git api
+
+[Service]
+Type=simple
+WorkingDirectory=/usr/share/srht/git
+ExecStart=/usr/bin/gitsrht-api
+

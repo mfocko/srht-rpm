@@ -1,6 +1,6 @@
 Name:           sourcehut-git
 Version:        0.54.1
-Release:        9%{?dist}
+Release:        10%{?dist}
 Summary:        Git services for Sourcehut
 
 License:        AGPL
@@ -11,6 +11,7 @@ Source2:        git-srht.conf
 Source3:        git-gunicorn-run.py
 Source4:        git.ini
 Source5:        sourcehut-git.timer
+Source6:        sourcehut-git-api.service
 BuildRequires:  python3-scmsrht, python3-devel, python3-gitsrht, sourcehut-core, sourcehut-meta, sassc, node, npm, git, golang
 Requires:       python3-scmsrht, python3-gitsrht, python3-pygit2, python3-minio, sourcehut-core, sourcehut-meta, python3-gunicorn, golang
 
@@ -74,6 +75,7 @@ cp %{SOURCE2} %{buildroot}/%{_sysconfdir}/httpd/conf.d/git-srht.conf
 install -m 0755 %{SOURCE3} %{buildroot}/usr/share/srht/git/gunicorn-run.py
 cp %{SOURCE4} %{buildroot}/%{_sysconfdir}/sr.ht/git.ini
 cp %{SOURCE5} %{buildroot}/%{_sysconfdir}/systemd/system/sourcehut-git.timer
+cp %{SOURCE6} %{buildroot}/%{_sysconfdir}/systemd/system/sourcehut-git-api.service
 
 
 %files
@@ -82,6 +84,7 @@ cp %{SOURCE5} %{buildroot}/%{_sysconfdir}/systemd/system/sourcehut-git.timer
 %{_sysconfdir}/sr.ht/git.ini
 %{_sysconfdir}/systemd/system/sourcehut-git.service
 %{_sysconfdir}/systemd/system/sourcehut-git.timer
+%{_sysconfdir}/systemd/system/sourcehut-git-api.service
 %{_sysconfdir}/httpd/conf.d/git-srht.conf
 %{_bindir}/gitsrht-initdb
 %{_bindir}/gitsrht-migrate
