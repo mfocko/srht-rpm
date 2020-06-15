@@ -13,10 +13,6 @@ BuildArch:      noarch
 
 BuildRequires:  python3-devel
 #BuildRequires:  (python3dist(coverage) >= 4.5.3 with python3dist(coverage) < 5)
-BuildRequires:  (python3dist(pytest) >= 4.6.2 with python3dist(pytest) < 4.7)
-BuildRequires:  python3dist(pytest-cov) >= 2.8.1
-BuildRequires:  python3dist(pytest-mock) >= 2
-BuildRequires:  python3dist(pytest-xdist) >= 1.31
 BuildRequires:  python3dist(requests) >= 2.20
 BuildRequires:  python3dist(requests) >= 2.20
 BuildRequires:  python3dist(setuptools)
