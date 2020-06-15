@@ -1,7 +1,7 @@
 %global srcname pastesrht
 
 Name:           python-%{srcname}
-Version:        0.10.3
+Version:        0.10.5
 Release:        2%{?dist}
 Summary:        Pastebin for Sourcehut
 
