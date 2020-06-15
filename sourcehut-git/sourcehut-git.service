@@ -1,6 +1,7 @@
 [Unit]
 Description=SourceHut git services
 Requires=sourcehut-git.timer
+Requires=sourcehut-git-api.service
 
 [Service]
 Type=simple
