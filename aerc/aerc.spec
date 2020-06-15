@@ -20,6 +20,7 @@ A mail client
 
 
 %build
+export PREFIX=/usr
 %make_build
 
 
