@@ -1,5 +1,5 @@
 Name:           sourcehut-paste
-Version:        0.10.3
+Version:        0.10.5
 Release:        3%{?dist}
 Summary:        Pastebin for Sourcehut
 
