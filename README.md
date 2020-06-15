@@ -66,22 +66,25 @@ You are now using Sourcehut.
 # Status
 
 The following components are considered stable:
- * meta
- * core
- * scm
- * hub
- * git
+
+	* meta
+    * core
+    * scm
+    * hub
+    * git
  
 The following components are WIP or have major known issues:
- * hg
- * todo 
+
+	* hg
+	* todo 
  
 The following components are unstarted:
- * builds
- * lists
- * man
- * dispatch
- 
+
+	* builds
+    * lists
+	* man
+	* dispatch
+
 
 
 # Puppet
