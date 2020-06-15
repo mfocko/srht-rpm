@@ -46,6 +46,8 @@ You are now using Sourcehut.
  * [![Copr build status](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/sourcehut-todo/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/sourcehut-todo/) `sourcehut-todo` is the web interface for Sourcehut tickets
  * [![Copr build status](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/python-pastesrht/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/python-pastesrht/) `python-pastesrht` is the Python library for Sourcehut pastebin
  * [![Copr build status](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/sourcehut-paste/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/sourcehut-paste/) `sourcehut-paste` is the web interface for Sourcehut pastebin
+ * [![Copr build status](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/python-buildsrht/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/python-buildsrht/) `python-buildsrht` is the Python library for Sourcehut builds
+ * [![Copr build status](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/sourcehut-build/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/tylerjgriffiths/srht/package/sourcehut-build/) `sourcehut-build` is the web interface for Sourcehut builds
  
 
 ### Dependencies
