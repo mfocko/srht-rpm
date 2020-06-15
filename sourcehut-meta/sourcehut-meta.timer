@@ -1,0 +1,8 @@
+[Unit]
+Description=Timers for Sourcehut Meta
+
+[Timer]
+## Run daily
+OnCalendar=*-*-* 3:00:00
+ExecStart=/usr/bin/metasrht-daily
+

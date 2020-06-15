@@ -1,6 +1,6 @@
 Name:           sourcehut-meta
 Version:        0.44.2
-Release:        14%{?dist}
+Release:        15%{?dist}
 Summary:        Profile and credential storage for Sourcehut
 
 License:        AGPL
@@ -11,6 +11,7 @@ Source2:        sourcehut-meta.service
 Source3:        meta-srht.conf
 Source4:        meta-gunicorn-run.py
 Source5:        sourcehut-meta-api.service
+Source6:        sourcehut-meta.timer
 BuildRequires:  python3-srht, python3-metasrht, sassc, sourcehut-core, golang, git
 Requires:       python3-metasrht, sassc, python3-gunicorn, sourcehut-core, golang, git
 
@@ -60,6 +61,7 @@ cp %{SOURCE2} %{buildroot}/%{_sysconfdir}/systemd/system/
 cp %{SOURCE3} %{buildroot}/%{_sysconfdir}/httpd/conf.d/meta-srht.conf
 cp %{SOURCE4} %{buildroot}/usr/share/srht/meta/gunicorn-run.py
 cp %{SOURCE5} %{buildroot}/%{_sysconfdir}/systemd/system/
+cp %{SOURCE6} %{buildroot}/%{_sysconfdir}/systemd/system/
 
 chmod a+xr -R %{buildroot}/usr/share/srht/
 
@@ -78,6 +80,7 @@ chmod a+xr -R %{buildroot}/usr/share/srht/
 %config %{_sysconfdir}/httpd/conf.d/meta-srht.conf
 %{_sysconfdir}/systemd/system/sourcehut-meta.service
 %{_sysconfdir}/systemd/system/sourcehut-meta-api.service
+%{_sysconfdir}/systemd/system/sourcehut-meta.timer
 
 /usr/share/srht/meta/
 
