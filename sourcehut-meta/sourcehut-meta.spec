@@ -1,6 +1,6 @@
 Name:           sourcehut-meta
-Version:        0.44.2
-Release:        17%{?dist}
+Version:        0.44.4
+Release:        18%{?dist}
 Summary:        Profile and credential storage for Sourcehut
 
 License:        AGPL
