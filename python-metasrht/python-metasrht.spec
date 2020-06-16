@@ -1,7 +1,7 @@
 %global srcname metasrht
 
 Name:           python-%{srcname}
-Version:        0.44.2
+Version:        0.44.4
 Release:        7%{?dist}
 Summary:        Metadata service for Sourcehut
 
