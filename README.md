@@ -8,7 +8,7 @@ CentOS too.
 ## Usage
 
 ````sh
-sudo dnf copr enable tylerjgriffiths/srht
+sudo dnf copr enable [[redacted]]/srht
 sudo dnf -y install sourcehut-git
 ````
 
